@@ -18,7 +18,7 @@
         <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
 
         <!-- Contact buttons don't work in print, configure in the _config.yml file, remove "print-only" to display always. -->
-        <div class="header-contact-info print-only" itemprop="contact-info">
+        <div class="header-contact-info" itemprop="contact-info">
           <p>{{ site.resume_header_contact_info }}</p>
         </div>
 
@@ -32,7 +32,7 @@
         </div>
 
         <div class="executive-summary no-print" itemprop="description">
-          <p>This is the executive summary. You should write a few brief, concise, and meaningful sentences about yourself from a professional context, and your immediate career goals. Make the length appropriate for your needs, but K.I.S.S.</p>
+          <p>After studying web development on my own I decided that it was what I wanted to do. Recently, I completed the full time web development course at Bitmaker Labs where I gained solid foundation in Ruby, Rails, JavaScript, HTML and CSS. I look forward to advancing these skills while collaborating and contributing to creative projects that people love to use.</p>
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
@@ -46,6 +46,43 @@
 
       {% if site.resume_section_experience %}
       <!-- begin Experience -->
+
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+        <div class="skills_section">
+        <img src="images/css_icon.png" alt="my photo" class="skills_icon" itemprop="image">
+        <img src="images/html_icon.png" alt="my photo" class="skills_icon" itemprop="image">
+        <img src="images/javascript1600.png" alt="my photo" class="skills_icon" itemprop="image">
+        <img src="images/rails_icon.png" alt="my photo" class="skills_icon" itemprop="image">
+        <img src="images/ruby_icon.png" alt="my photo" class="skills_icon" itemprop="image">
+        <img src="images/jquery-4096-black.png" alt="my photo" class="skills_icon" itemprop="image">
+      </div>
+
+
+
+      </section>
+
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
+
+        <div class="resume-item">
+          <a href="https://github.com/frankburke333/Parkie">  <img src="images/parkie.png" alt="my photo" class="parkie_icon" itemprop="image"></a>
+          <h4 class="resume-item-details">Co-Founder & Developer &bull; Jan, 2017 &mdash; Present</h4>
+          <p class="resume-item-copy">Find activities at parks near you, subscribe to an activity at that park or create an event. App sends texts to those who subscribe to that park activity when new events are created for that activity.</p>
+        </div>
+
+      </section>
+      <!-- end Projects -->
+      {% endif %}
+
       <section class="content-section">
 
         <header class="section-header">
@@ -53,34 +90,31 @@
         </header>
 
         <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details" itemprop="description">Safety Inspector &bull; Nov, 1980 &mdash; Present</h4>
-          <p class="resume-item-copy">Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points:</p>
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="https://www.distributel.ca/">
+          <h3 class="resume-item-title" itemprop="name">Distributel Canada</h3>
+          <h4 class="resume-item-details" itemprop="description">Manager, Revenue Optimization &bull; Oct, 2014 &mdash; Present</h4>
+          <p class="resume-item-copy"></p>
           <ul class="resume-item-list">
-            <li>Ate lots of donuts</li>
-            <li>Fell asleep rarely</li>
-            <li>Left promptly at end of day (sometimes earlier)</li>
+            <li>Designed and implemented new Sales and Retention incentive models that reward the behaviours that drive close/save rates and reduce credits.</li>
+            <li>Developed new suite of daily automated sales reports that are used across the company to measure key sales/loyalty KPIs. </li>
+            <li>These efforts contributed to a 20% improvement in our close rate in 2016 and reduced agent credits by 15%.</li>
           </ul>
-          <p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p>
 
         </div><!-- end of resume-item -->
 
         <!-- another resume item -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Sir Putt-A-Lot's Merrie Olde Fun Centre</h3>
-          <h4 class="resume-item-details" itemprop="description">Windmill Crank Operator &bull; Jun, 1978 &mdash; Sept, 1979</h4>
-          <p class="resume-item-copy">If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.</p>
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="https://www.siriusxm.ca/">
+          <h3 class="resume-item-title" itemprop="name">SiriusXM Canada</h3>
+          <h4 class="resume-item-details" itemprop="description">Manager, Revenue Optimization &bull; June, 2006 &mdash; Oct, 2014</h4>
+          <p class="resume-item-copy"></p>
+          <ul class="resume-item-list">
+            <li>Developed and execute programs for agents designed around revenue. </li>
+            <li>Developed and reported on key analytics for sales/retention teams.</li>
+            <li>Created and managed all aspects of agent incentive programs desinged to push high ARPU plans/products. </li>
+          </ul>
 
         </div><!-- end of resume-item -->
 
-        <!-- by now you're getting the picture... -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Simpson Lazer Tag</h3>
-          <h4 class="resume-item-details" itemprop="description">Front Desk Attendant &bull; Jun, 1975 &mdash; May, 1978</h4>
-          <p class="resume-item-copy">Boy, when Marge first told me she was going to the Police Academy, I thought it would be fun and exciting, you know, like the movie... Spaceballs. But instead, it's been painful and disturbing, like the movie Police Academy.</p>
-
-        </div><!-- end of resume-item -->
 
       </section>
       <!-- end Experience -->
@@ -95,158 +129,41 @@
         </header>
 
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">Springfield College</h3>
-          <h4 class="resume-item-details" itemprop="description">Associates Degree, Business Management &bull; 1984 &mdash; 1986</h4>
-          <p class="resume-item-copy">If you had any meaningful roles at college, feel free to write about them here.</p>
+          <img src="images/bitmaker.png" alt="my photo" class="bitmaker_icon" itemprop="image">
+          <h3 class="resume-item-title" itemprop="name">Bitmaker Labs</h3>
+          <h4 class="resume-item-details" itemprop="description">Full Stack Web Development &bull; 2017</h4>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">Fanshawe College</h3>
+          <h4 class="resume-item-details" itemprop="description">Business Administration &bull; 1994 &mdash; 1996</h4>
         </div>
 
       </section>
       <!-- end Education -->
       {% endif %}
 
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
-      <section class="content-section">
 
-        <header class="section-header">
-          <h2>Projects</h2>
-        </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://donutlocator.io">donutfinder.io</a></h3>
-          <h4 class="resume-item-details">Founder & Primary Developer &bull; 2012 &mdash; Present</h4>
-          <p class="resume-item-copy">Donut Locator is an open source node/ember app that lets users find donuts within a defined radius from their home.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Donut Eater's User Group</h3>
-          <h4 class="resume-item-details">Co-Founder & Organizer &bull; 2007 &mdash; Present</h4>
-          <p class="resume-item-copy">DEUG is a local monthly meetup in Springfield where we share all the latest tips and tricks for dat donut lifestyle. I organize the group, and typically eat most of the donuts.</p>
-        </div>
-
-      </section>
-      <!-- end Projects -->
-      {% endif %}
 
       {% if site.resume_section_skills %}
       <!-- begin Skills -->
-      <section class="content-section">
 
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Donut design</h4>
-          <p class="resume-item-copy">Sprinkle art, icing design, eclair management, taste testing, donut/coffee pairing research</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Craft beer brewing</h4>
-          <p class="resume-item-copy">Hops inspection, brew testing, distribution management, bottle label design, festival and event management</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Family leadership</h4>
-          <p class="resume-item-copy">Bread winning, conflict resolution, couch inspection, TV longevity testing</p>
-        </div>
-
-      </section>
       <!-- end Skills -->
       {% endif %}
 
       {% if site.resume_section_recognition %}
       <!-- begin Recognition -->
-      <section class="content-section">
 
-        <header class="section-header">
-          <h2>Recognition</h2>
-        </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details">Outstanding Achievement &bull; 2010</h4>
-          <p class="resume-item-copy">Awarded for stopping a nuclear meltdown, even though I also started it.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Duff Beer Customer of the year</h3>
-          <h4 class="resume-item-details">1997 &mdash; 2001, 2003, 2008 &mdash; 2012</h4>
-          <p class="resume-item-copy">Honored by <a href="https://en.wikipedia.org/wiki/Duff_Beer">Duff Beer</a> for being an outstanding customer several years straight. Qualifications included most beer consumed at a bar, most beer purchased, and most beer ralphed.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Moe's Patron of the Month</h3>
-          <h4 class="resume-item-details">12/2001, 8/2004</h4>
-          <p class="resume-item-copy">Specifically this prestigious awarded twice for stopping a robber with my belly.</p>
-        </div>
-
-      </section>
-      <!-- end Recognition -->
       {% endif %}
 
       {% if site.resume_section_associations %}
       <!-- begin Associations -->
-      <section class="content-section">
 
-        <header class="section-header">
-          <h2>Associations</h2>
-        </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://beerfortheworld.com">Beer for the World</a></h3>
-          <h4 class="resume-item-details">Volunteer &bull; 2008 &mdash; Present</h4>
-          <p class="resume-item-copy">Organized fund drives and participated in fundraising events for the benefit of families in third world countries without proper access to malt beverages.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Nuclear Workers Labor Union</h3>
-          <h4 class="resume-item-details">Member in Good Standing &bull; 1994 &mdash; Present</h4>
-          <p class="resume-item-copy">Founding member of the local nuclear workers labor union.</p>
-        </div>
-
-      </section>
-      <!-- end Associations -->
-      {% endif %}
-
-      {% if site.resume_section_links %}
-      <!-- begin Links -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Additional Links</h2>
-        </header>
-
-        <div class="resume-item">
-          <ul class="resume-item-list">
-            <li><a href="#">Springfield Poker Club</a></li>
-            <li><a href="#">Springfield Donut Eater's User Group</a></li>
-          </ul>
-        </div>
-
-      </section>
-      <!-- end Links -->
-      {% endif %}
-
-      {% if site.resume_print_social_links %}
-      <!-- begin Print Social Links -->
-      <section class="content-section print-only">
-
-        <header class="section-header">
-          <h2>Social Links</h2>
-        </header>
-
-        <div class="resume-item">
-        {% include print-social-links.html %}
-        </div>
-
-      </section>
       <!-- end Print Social Links -->
       {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
+        <p class="footer-line">Made by Frank Burke. Fork me on <a href="https://github.com/frankburke333">GitHub</a>.</p>
       </footer>
 
     </div>
