@@ -9,7 +9,7 @@ sass:
   style: compressed
 
 # Resume settings
-resume_avatar:                  "false"
+resume_avatar:                  "true"
 resume_name:                    "Frank Burke"
 resume_title:                   "Web Developer"
 resume_contact_email: "frank.burke@gmail.com"
@@ -34,7 +34,7 @@ resume_section_associations:    true
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
   resume_github_url:            "https://github.com/frankburke333"
-  resume_linkedin_url:          "https://www.linkedin.com/in/joelglovier"
+  resume_linkedin_url:          "https://www.linkedin.com/in/frankburketoronto/"
 
 resume_print_social_links:      true
 
