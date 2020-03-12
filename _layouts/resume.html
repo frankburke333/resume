@@ -32,9 +32,12 @@
         </div>
 
         <div class="executive-summary no-print" itemprop="description">
-          <p>After studying web development on my own I decided that it was what I wanted to do.
-            Recently, I completed the full time web development course at Bitmaker Labs where I gained solid foundation in Ruby,
-            Rails, JS, HTML and CSS. I look forward to advancing these skills while contributing to creative projects that people love to use.</p>
+          <p>Over 10 years experience in working with all elements of Sales Teams and Call Centres with a focus on
+            building sales/retention metric reporting and proven incentive models that drive revenue and sticky sales
+            by rewarding the right behaviours (good quality, low cost per sale/save etc) and motivating the staff with
+            daily reports that share their results and incentive earned. This experience allows me to quickly identify
+            gaps in existing reports and processes that once remedied will save money by lowering credits and will drive
+            revenue with higher close rates.</p>
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
@@ -57,36 +60,16 @@
         <div class="skills_section">
         <img src="images/css_icon.png" alt="my photo" class="skills_icon" itemprop="image">
         <img src="images/html_icon.png" alt="my photo" class="skills_icon" itemprop="image">
-        <img src="images/javascript1600.png" alt="my photo" class="skills_icon" itemprop="image">
         <img src="images/rails_icon.png" alt="my photo" class="skills_icon" itemprop="image">
         <img src="images/ruby_icon.png" alt="my photo" class="skills_icon" itemprop="image">
-        <img src="images/jquery-4096-black.png" alt="my photo" class="skills_icon" itemprop="image">
+        <img src="images/excel.png" alt="my photo" class="skills_icon" itemprop="image">
       </div>
 
 
 
       </section>
 
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
-      <section class="content-section">
 
-        <header class="section-header">
-          <h2>Projects</h2>
-        </header>
-
-        <div class="resume-item">
-          <a href="https://parkie-.herokuapp.com/">  <img src="images/Parkie.png" alt="my photo" class="parkie_icon" itemprop="image"></a>
-          <h4 class="resume-item-details">Co-Founder & Developer &bull; Mar, 2017 &mdash; Present</h4>
-          <li class="resume-item-copy">Parkie connects Toronto Park users.  It allows you to connect and join local park based events (pick up games, dog park, play dates).</li>
-          <li id="dtel">App sends text to those who subscribe to that park activity when new events are created for that activity.
-            They can click a link on the text to join which will notify all existing participants.
-            App was built with Rails, incorporating Google Maps API and Twilio. </li>
-        </div>
-
-      </section>
-      <!-- end Projects -->
-      {% endif %}
 
       <section class="content-section">
 
@@ -97,12 +80,15 @@
         <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="https://www.distributel.ca/">
           <h3 class="resume-item-title" itemprop="name">Distributel Canada</h3>
-          <h4 class="resume-item-details" itemprop="description">Manager, Revenue Optimization &bull; Oct, 2014 &mdash; Present</h4>
+          <h4 class="resume-item-details" itemprop="description">Project Analyst &bull; Oct, 2014 &mdash; Present</h4>
           <p class="resume-item-copy"></p>
           <ul class="resume-item-list">
+            <li> Implemented key changes in how we engage new customers with SMS. Customers can now reply to install reminder texts if there is any issue with the date and time.
+              This drastically improved our customer experience while reducing calls into our call centre.</li>
+              <li> Developed, tested and launched automated CSAT surveys via the Qualtrics platform.  Multiple surveys based on customer type and tenure are now sent automatically everyday allowing us to measure call centre performance and impact of sales initiatives.</li>
             <li>Designed and implemented new Sales and Retention incentive models that reward the behaviours that drive close/save rates and reduce credits.</li>
             <li>Developed new suite of daily automated sales reports that are used across the company to measure key KPIs. </li>
-            <li>These efforts contributed to a 20% improvement in our close rate in 2016 and reduced agent credits by 15%.</li>
+            <li>These efforts contributed to improved close rates and reduced agent credits.</li>
           </ul>
 
         </div><!-- end of resume-item -->
@@ -119,7 +105,25 @@
           </ul>
 
         </div><!-- end of resume-item -->
+        {% if site.resume_section_projects %}
+        <!-- begin Projects -->
+        <section class="content-section">
 
+          <header class="section-header">
+            <h2>Projects</h2>
+          </header>
+
+          <div class="resume-item">
+            <a href="http://www.numbersbyknuckles.com/">  <img src="images/nba.png" alt="my photo" class="parkie_icon" itemprop="image"></a>
+            <h4 class="resume-item-details">Co-Founder & Developer &bull; Oct, 2017 &mdash; Present</h4>
+            <li class="resume-item-copy">Numbers by Knuckles is an advanced NBA Player ranking site</li>
+            <li id="dtel">I have a strong passion for all things basketball and also like to keep the coding skills I leaned at bitmaker sharp by updating and maintaining this site</li>
+            <li id="dtel">By using advanced formulas that are rooted in standard deviation the site is a valuable resource for fantasy basketball and fans alike.</li>
+          </div>
+
+        </section>
+        <!-- end Projects -->
+        {% endif %}
 
       </section>
       <!-- end Experience -->
